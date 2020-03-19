@@ -1,6 +1,4 @@
-let nombre = prompt("Cuál es tu nombre?");
-let edad = prompt("Cual es tu edad?");
+let aprendiendo = 'Aprendiendo',
+    lenguaje = 'JavaScript';
 
-document.getElementById('app').innerHTML = `Bienvenido ${nombre} de ${edad} años`;
-
-console.log('Enviando a la consola');
+console.log(`${aprendiendo} ${lenguaje}`);
