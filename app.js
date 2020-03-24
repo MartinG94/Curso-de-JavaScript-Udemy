@@ -2,6 +2,8 @@ try{
     funcionInexistente();
 } catch(error){
     console.log(error);
+} finally {
+    console.log(`Ejecuta un codigo de todos modos`);
 };
 
 function obtenerClientes(){
@@ -12,4 +14,3 @@ function obtenerClientes(){
 };
 
 obtenerClientes();
-
