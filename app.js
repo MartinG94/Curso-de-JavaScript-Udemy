@@ -1,31 +1,15 @@
-const productoA = 'Pizza',
-      precioA = 270,
-      productoB = 'Hamburguesa',
-      precioB = 350;
-
-// Forma vieja de crear un Template de HTML
-// let html = '<ul>' +
-//             '<li>Orden: ' + productoA + '</li>' +
-//             '<li>Precio: ' + precioA + '</li>' +
-//             '<li>Orden: ' + productoB + '</li>' +
-//             '<li>Precio: ' + precioB + '</li>' +
-//             '<li>Total: ' + (precioA + precioB) + '</li>' +
-//             '</ul>';
-
-function calcularTotal(unPrecio, otroPrecio){
-    return unPrecio + otroPrecio;
+try{
+    funcionInexistente();
+} catch(error){
+    console.log(error);
 };
 
-html = `
-    <ul>
-        <li>Orden: ${productoA} </li>
-        <li>Precio: ${precioA} </li>
-        <li>Orden: ${productoB} </li>
-        <li>Precio: ${precioB} </li>
-        <li>Total: ${calcularTotal(precioA, precioB)} </li>
-    </ul>
-        `;
+function obtenerClientes(){
+    console.log(`Descargando...`);
+    setTimeout(function() {
+        console.log(`Completado`);
+    }, 3000);
+};
 
-// Las funciones pueden usarse dentro de los Templates Literals
+obtenerClientes();
 
-document.getElementById('app').innerHTML = html;
