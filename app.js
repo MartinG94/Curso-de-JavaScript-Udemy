@@ -1,16 +1,22 @@
-try{
-    funcionInexistente();
-} catch(error){
-    console.log(error);
-} finally {
-    console.log(`Ejecuta un codigo de todos modos`);
-};
+// En JS Existe un objeto llamado Date
 
-function obtenerClientes(){
-    console.log(`Descargando...`);
-    setTimeout(function() {
-        console.log(`Completado`);
-    }, 3000);
-};
+const diaHoy = new Date();
 
-obtenerClientes();
+let valor;
+//Mes: Enero = 0;
+valor = diaHoy.getMonth();
+//Dia
+valor = diaHoy.getDate();
+//Año
+valor = diaHoy.getFullYear();
+//Minutos
+valor = diaHoy.getMinutes();
+//Hora
+valor = diaHoy.getHours();
+//Milisegundos desde 1970
+valor = diaHoy.getTime();
+//Cambiar Año
+valor = diaHoy.setFullYear(2050);
+valor = diaHoy.getFullYear();
+
+console.log(valor);
